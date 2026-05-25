@@ -9,7 +9,7 @@ async function login(page, username, password) {
     await loginPage.enterUsername(username);
 
     await loginPage.enterPassword(password);
-
+return loginPage
     
 }
 

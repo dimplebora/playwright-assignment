@@ -4,6 +4,6 @@ Feature: Login
 
 Scenario: to check login with valid credentials
 Given i am on login screen
-When  i enter "username" and "password"
+When  i enter "boradimple49@gmail.com" and "Jinisha@123"
 And click on sign in button
 Then a link with browse events should display

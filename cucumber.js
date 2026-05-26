@@ -1,14 +1,20 @@
+// cucumber.js
+
 module.exports = {
+  default: {
+    
+    require: [
+      'features/support/*.js',
+      'features/step-definitions/*.js'
+    ],
 
-    default: {
+    format: [
+      'progress',
+      'html:test-results/cucumber-report.html'
+    ],
 
-        require: [
+    publishQuiet: true,
 
-            'step-definitions/*.js'
-        ],
-
-        format: ['progress'],
-
-        paths: ['features/*.feature']
-    }
+    parallel: 1
+  }
 };

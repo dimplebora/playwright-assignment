@@ -12,8 +12,7 @@ class Login {
 
         this.clicksignin = page.locator('#login-btn');
 
-        this.browseeventlink =
-            page.locator("//span[text()='Browse Events →']");
+        this.browseeventlink = page.getByRole('link', { name: /Browse Events/ }).first();
     }
 
     async goTo() {
@@ -41,6 +40,15 @@ class Login {
     async verifyBrowseEventsLink() {
 
         await expect(this.browseeventlink).toBeVisible();
+    }
+
+    async login(username, password) {
+
+        await this.goTo();
+        await this.enterUsername(username);
+        await this.enterPassword(password);
+        await this.clickSignIn();
+        await this.verifyBrowseEventsLink();
     }
 }
 

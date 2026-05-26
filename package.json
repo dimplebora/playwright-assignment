@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "cucumber": "cucumber-js",
+    "test": "playwright test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

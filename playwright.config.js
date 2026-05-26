@@ -16,7 +16,7 @@ export default defineConfig({
   ],
   
   use: {
-    
+    baseURL: 'https://eventhub.rahulshettyacademy.com',
     trace: 'on-first-retry',
   },
 
@@ -41,4 +41,3 @@ export default defineConfig({
 
  
 });
-

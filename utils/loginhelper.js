@@ -4,12 +4,8 @@ async function login(page, username, password) {
 
     const loginPage = new Login(page);
 
-    await loginPage.goTo();
-
-    await loginPage.enterUsername(username);
-
-    await loginPage.enterPassword(password);
-return loginPage
+    await loginPage.login(username, password);
+    return loginPage
     
 }
 
